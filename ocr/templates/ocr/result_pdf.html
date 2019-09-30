@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}	
+	{% if uploaded_file_url %}
+		<p>Documento:</p><p><embed src="{{ uploaded_file_url }}" type="application/pdf" width="100%" height="600px" /></p>
+	{% endif %}
+	<p>Resultado:</p>
+	<p>{{ result|linebreaksbr}}</p>
+{% endblock %}

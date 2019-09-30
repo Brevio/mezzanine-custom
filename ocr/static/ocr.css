@@ -1,0 +1,45 @@
+h1 a {
+    color: #FCA205;
+}
+
+.container {
+         width: 100vw;
+         height: 100vh;
+         background: #fff;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center
+     }
+     .box {
+         width: 315px;
+         height: 300px;
+         background: #fff;
+     }
+     body {
+        margin: 0px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}

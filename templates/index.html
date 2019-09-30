@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>Bem vindo!</h2>
+<p>
+	Plataforma de prototipação GCQI
+	Google Cloud Vision
+</p>
+<ul>
+    <li><a href="ocr/simple_upload">Extração de texto (JPEG/PNG)</a></li>
+    <ul style="list-style-type:disc;">
+	    <li><a href="ocr/pdf">PDF</a></li>
+	    <li><a href="ocr/tiff">TIFF</a></li>
+    </ul>
+    <li><a href="ocr/labels">Rótulos</a></li>
+    <li><a href="ocr/simple_upload_automl">AutoML</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}

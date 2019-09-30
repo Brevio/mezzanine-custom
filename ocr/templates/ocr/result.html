@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}	
+	{% if uploaded_file_url %}
+		<p>Documento:</p><p><img src="{{ uploaded_file_url }}" class="img-fluid" alt="Responsive image"></p>
+	{% endif %}
+	<p>Resultado:</p>
+	<p>{{ result|linebreaksbr}}</p>
+{% endblock %}

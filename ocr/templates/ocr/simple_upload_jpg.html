@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+	 <form method="post" enctype="multipart/form-data">
+    		{% csrf_token %}
+		<p>Selecione o documento (JPEG/PNG):</p>
+		<input type="file" name="myfile">
+  		<input type="submit" class="btn btn-default" value="Enviar"/>
+	 </form>
+{% endblock %}
