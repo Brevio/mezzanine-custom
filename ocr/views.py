@@ -67,7 +67,7 @@ def ocr_textract(request):
         filename = fs.save(myfile.name, myfile)
         uploaded_file_url = fs.url(filename)
         enc = EnconderBase64()
-        result = enc.send_textract(uploaded_file_url)
+        result = enc.send_textract(uploaded_file_url,filename)
         return render(request, 'ocr/result.html', {
             'uploaded_file_url': uploaded_file_url, 'result':result
         })

@@ -5224,3 +5224,123 @@ Not Found: /www.baidu.com:443
 [30/Sep/2019 01:57:12] "GET /static/js/bootstrap.js HTTP/1.1" 200 60681
 [30/Sep/2019 01:57:14] "GET /static/css/bootstrap.css HTTP/1.1" 200 132546
 [30/Sep/2019 01:57:16] "GET /static/mezzanine/js/jquery-1.8.3.min.js HTTP/1.1" 200 93636
+[30/Sep/2019 08:56:53] "GET / HTTP/1.0" 200 5100
+              .....
+          _d^^^^^^^^^b_
+       .d''           ``b.
+     .p'                `q.
+    .d'                   `b.
+   .d'                     `b.   * Mezzanine 4.3.1
+   ::                       ::   * Django 1.11.22
+  ::    M E Z Z A N I N E    ::  * Python 3.6.8
+   ::                       ::   * SQLite 3.22.0
+   `p.                     .q'   * Linux 4.15.0-1036-gcp
+    `p.                   .q'
+     `b.                 .d'
+       `q..          ..p'
+          ^q........p^
+              ''''
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2019 - 16:01:45
+Django version 1.11.22, using settings 'vision.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+              .....
+          _d^^^^^^^^^b_
+       .d''           ``b.
+     .p'                `q.
+    .d'                   `b.
+   .d'                     `b.   * Mezzanine 4.3.1
+   ::                       ::   * Django 1.11.22
+  ::    M E Z Z A N I N E    ::  * Python 3.6.8
+   ::                       ::   * SQLite 3.22.0
+   `p.                     .q'   * Linux 4.15.0-1036-gcp
+    `p.                   .q'
+     `b.                 .d'
+       `q..          ..p'
+          ^q........p^
+              ''''
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 30, 2019 - 12:54:02
+Django version 1.11.22, using settings 'vision.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[30/Sep/2019 12:55:08] "GET / HTTP/1.1" 200 5100
+[30/Sep/2019 12:55:32] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 12:57:52] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 12:57:52] "GET /static/css/bootstrap-theme.css HTTP/1.1" 200 21368
+[30/Sep/2019 12:57:52] "GET /static/css/mezzanine.css HTTP/1.1" 200 10785
+[30/Sep/2019 12:57:53] "GET /static/css/bootstrap.css HTTP/1.1" 200 132546
+[30/Sep/2019 12:57:53] "GET /static/mezzanine/js/jquery-1.8.3.min.js HTTP/1.1" 200 93636
+[30/Sep/2019 12:57:54] "GET /static/js/bootstrap-extras.js HTTP/1.1" 200 2841
+[30/Sep/2019 12:57:55] "GET /static/js/bootstrap.js HTTP/1.1" 200 60681
+[30/Sep/2019 12:57:56] "GET /static/img/favicon.ico HTTP/1.1" 200 318
+[30/Sep/2019 13:03:30] "POST /ocr/textract/ HTTP/1.1" 200 30890
+[30/Sep/2019 13:03:33] "GET /static/media/imageTeste.jpg HTTP/1.1" 200 142940
+Internal Server Error: /ocr/textract/
+Traceback (most recent call last):
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'myfile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/brevio/pyprojs/vision/ocr/views.py", line 64, in ocr_textract
+    if request.method == 'POST' and request.FILES['myfile']:
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'myfile'"
+[30/Sep/2019 13:06:18] "POST /ocr/textract/ HTTP/1.1" 500 74548
+[30/Sep/2019 13:08:56] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:09:25] "POST /ocr/textract/ HTTP/1.1" 200 5194
+[30/Sep/2019 13:09:28] "GET /static/media/imageTeste_yO48f4i.jpg HTTP/1.1" 200 142940
+[30/Sep/2019 13:12:18] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:14:02] "POST /ocr/textract/ HTTP/1.1" 200 5194
+[30/Sep/2019 13:14:04] "GET /static/media/imageTeste_QZk7D2T.jpg HTTP/1.1" 200 142940
+[30/Sep/2019 13:19:42] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:19:46] "GET /static/img/favicon.ico HTTP/1.1" 200 318
+[30/Sep/2019 13:22:59] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:23:00] "GET /static/img/favicon.ico HTTP/1.1" 200 318
+[30/Sep/2019 13:23:07] "POST /ocr/textract/ HTTP/1.1" 200 5194
+[30/Sep/2019 13:23:08] "GET /static/media/imageTeste_RwrvHBt.jpg HTTP/1.1" 200 142940
+[30/Sep/2019 13:23:30] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:23:46] "POST /ocr/textract/ HTTP/1.1" 200 5051
+[30/Sep/2019 13:23:47] "GET /static/media/imageTeste2.jpg HTTP/1.1" 200 10867
+[30/Sep/2019 13:24:05] "GET /ocr/textract/ HTTP/1.1" 200 5005
+[30/Sep/2019 13:24:11] "POST /ocr/textract/ HTTP/1.1" 200 4927
+[30/Sep/2019 13:24:11] "GET /static/media/images.jpg HTTP/1.1" 200 6749
+[30/Sep/2019 13:24:25] "GET /ocr/textract/ HTTP/1.1" 200 5005
+Internal Server Error: /ocr/textract/
+Traceback (most recent call last):
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/brevio/pyprojs/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/brevio/pyprojs/vision/ocr/views.py", line 70, in ocr_textract
+    result = enc.send_textract(uploaded_file_url,filename)
+  File "/home/brevio/pyprojs/vision/ocr/api.py", line 57, in send_textract
+    fileBase64 = enc.enconde('/home/brevio/pyprojs/vision'+image)
+  File "/home/brevio/pyprojs/vision/ocr/api.py", line 15, in enconde
+    imageFile = open(image, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/brevio/pyprojs/vision/static/media/1%20-%20AVIGRO%20AVICOLA%20AGROINDUSTRIAL%20LTDA%20-%20procura%C3%A7%C3%A3o%20Aval.pdf'
+[30/Sep/2019 13:24:37] "POST /ocr/textract/ HTTP/1.1" 500 76992
+Not Found: /favicon.ico/
+[30/Sep/2019 13:24:38] "GET /favicon.ico/ HTTP/1.1" 404 1699
+[30/Sep/2019 13:25:32] "POST /ocr/textract/ HTTP/1.1" 200 8800
+[30/Sep/2019 13:25:32] "GET /static/media/000002072V.TIF HTTP/1.1" 200 48975
+[30/Sep/2019 17:36:39] "GET / HTTP/1.0" 200 5100

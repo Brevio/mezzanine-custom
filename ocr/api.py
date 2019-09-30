@@ -52,10 +52,10 @@ class EnconderBase64():
         ret = str(json_data.get("result"))
         return ret
     
-    def send_textract(self,image):
+    def send_textract(self,image,fileName):
         enc = EnconderBase64()
         fileBase64 = enc.enconde('/home/brevio/pyprojs/vision'+image)
-        data_json = {'fileBase64':fileBase64}
+        data_json = {'fileBase64':fileBase64,'fileName':fileName}
         r = requests.post(url = API_ENDPOINT_TEXTRACT, json = data_json, headers={'Content-Type': 'application/json'})
         return r.text
 
